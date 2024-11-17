@@ -30,7 +30,8 @@
 class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         adj = defaultdict(list)
-        for src, dst in sorted(tickets)[::-1]:
+        # for src, dst in sorted(tickets)[::-1]:
+        for src, dst in sorted(tickets, reverse=True):
             adj[src].append(dst)
 
         res = []
