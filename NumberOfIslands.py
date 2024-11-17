@@ -16,6 +16,7 @@ class Solution:
 
             while q:
                 row, col = q.popleft()
+                # row, col = q.pop() # to make dfs
                 directions = [[1, 0],[-1, 0],[0, 1],[0, -1]]
 
                 for dr, dc in directions:
